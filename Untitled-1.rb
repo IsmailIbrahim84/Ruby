@@ -1,7 +1,17 @@
 # puts "Hello, world!"
+#######################################
+# require "csv"
 
-require "csv"
+# album = CSV.read("albums.csv")
 
-album = CSV.read("albums.csv")
+# puts album[1]
+#####################################
+require "./dispenser.rb"
+office_dispenser = Dispenser.new
 
-puts album[1]
+puts office_dispenser.dispense()
+puts office_dispenser.dispense()
+puts office_dispenser.refill(10)
+puts office_dispenser.dispense()
+puts office_dispenser.dispense()
+#####################################
